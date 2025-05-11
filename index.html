@@ -8,15 +8,15 @@
 <link rel="stylesheet" href="style.css">
 <body>
     <div class="main-content center">
-        <div class="navbar">
+        <div class="navbar center">
             <div class="logo center">
                 <div class="logo-img"></div>
-                <h1>iCurrency</h1>
+                <h1 class="logo-name">iCurrency</h1>
             </div>
             <div class="navbar-links">
                 <ul>
                     <li>Home</li>
-                    <li>Api</li>
+                    <li>API</li>
                     <li>Contact</li>
                 </ul>
             </div>
@@ -25,10 +25,22 @@
                 <button type="button" class="register nav-btn">Register</button>
             </div>
         </div>
-        <section class="main">
-            <div class="container"></div>
+        <section class="main center">
+            <strong class="heading">iCurrency<span class="heading-span">Converter - INR to Any Currency</span></strong>
+            <div class="container center">
+                <div class="select-from from-container center">
+                    <select class="currencySelect" id="from" name="FromCurrency" title="Select Country"></select>
+                    <input type="text" class="from-input"/>
+                </div>
+                <div class="select-to from-container center">
+                    <select class="currencySelect" id="to" name="ToCurrency" title="Select Country"></select>
+                    <input type="text" class="to-input"/>
+                </div>
+            </div>
         </section>
     </div>
     <footer></footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
